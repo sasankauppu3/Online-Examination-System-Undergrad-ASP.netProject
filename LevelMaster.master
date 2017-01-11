@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LevelMaster.master.cs" Inherits="LevelMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link href="daleri-single.css" type="text/css" rel="Stylesheet" />
+<script language="javascript" type="text/javascript" src ="count.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div >
+    <h1><a href="Default.aspx" style="color: #FF0000; font-weight: bold">i</a>pradeepkodley</h1>
+    <p class="slogan" style="color: #FF9933; font-weight: bold">Online Examination</p>
+        <%--<p class="toptabs">
+	<strong class="hide">Main menu:</strong>
+	<a class="toptab active" href="Index.aspx">Home</a><span class="hide"> | </span>
+	<a class="toptab" href="RegistrationForm.aspx">Page 2</a><span class="hide"> | </span>
+	<a class="toptab" href="LoginForm.aspx">Page 3</a><span class="hide"> | </span>
+	<a class="toptab" href="LevelForm.aspx">Page 4</a><span class="hide"> | </span>
+	<a class="toptab" href="Default.aspx">Page 5</a><span class="hide"> | </span>
+	<a class="toptab" href="Default.aspx">Page 6</a><span class="hide"> | </span>
+	<a class="toptab" href="Default.aspx">Page 7</a>
+	</p>--%>
+	<div id="maincontent" align="left">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

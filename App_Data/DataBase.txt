@@ -1,0 +1,11 @@
+Main Tables: 
+
+1.LoginTable( UserName(nchar(50)), Password(char(50)) );
+
+2.Question(slNo(int),Question(varchar(max)),Option1(varchar(max)),option2(varchar(max)),option3(varchar(max)),option4(varchar(max)),option5(varchar(max)),option6(varchar(max)),Correct(int),Answer(varchar(max)));
+
+3.RegistrationTbl(USERID(varchar(100)),USERPWD(VARCHAR(MAX)),CONPWD(VARCHAR(MAX)),USERNAME(VARCHAR(MAX)),EMAILID(VARCHAR(MAX)));
+
+4.ReportInfo(Name(nvarchar(50)),UserID(nvarchar(100)),Score(nchar(10)),Desciption(nvachar(max)));
+
+5.TestReport(UserID(nvarchar(100)),YourQues(nvarchar(max)),WrongAns(nvarchar(max)),Answer(nvarchar(max)));

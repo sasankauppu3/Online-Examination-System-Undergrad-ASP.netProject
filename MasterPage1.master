@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link href="daleri-single.css" type="text/css" rel="Stylesheet" />
+<script language="javascript" type="text/javascript" src ="count.js"></script>
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="bodybg.jpg">
+    <form id="form1" runat="server">
+    
+    
+    <div id="wrap" align="center">
+	<h1><a href="www.pradeepcsharp.blogspt.com" style="color: #FF0000; font-weight: bold">i</a>PradeepKodley C#</h1>
+	<p class="slogan" style="color: #FF9933; font-weight: bold">Online Examination, 
+        <%--<a href="#" style="color: #33CC33; font-weight: bold">Level-1</a>--%></p>
+
+	<p class="toptabs">
+	<strong class="hide">Main menu:</strong>
+	<a class="toptab active" href="Index.aspx">Home</a><span class="hide"> | </span>
+	<a class="toptab" href="RegistrationForm.aspx">Page 2</a><span class="hide"> | </span>
+	<a class="toptab" href="LoginForm.aspx">Page 3</a><span class="hide"> | </span>
+	<a class="toptab" href="LevelForm.aspx">Page 4</a><span class="hide"> | </span>
+	<a class="toptab" href="Default.aspx">Page 5</a><span class="hide"> | </span>
+	<a class="toptab" href="Default.aspx">Page 6</a><span class="hide"> | </span>
+	<a class="toptab" href="Default.aspx">Page 7</a>
+	</p>
+
+	<div id="maincontent" align="left">
+		<center><h2>No need to <a href="http://www.pradeepcsharp.blogspt.com/">make things</a> complicated...</h2></center>
+		<br />
+		<br />
+		
+		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+		
+		
+		
+		<%--<p style="color: #000000">An online Examination test that taken by iMastro through which an creamy material 
+            can gather from market. That will work in our Enviornment to complixh given task 
+            in given time.</p>
+		<p></p>
+
+		<h3>Login</h3>
+		
+		<br />
+		<br />
+		<div align="center">
+		
+		<table border="0" cellpadding="1" cellspacing="0" 
+                    style="border-collapse:collapse;" bgcolor="#FFFFCC">
+                    <tr>
+                        <td>
+                            <table border="0" cellpadding="10" style="width:298px;">
+                                <tr>
+                                    <td align="center" colspan="2" 
+                                        style="color:White;background-color:#6B696B;font-weight:bold;">
+                                        LogIn Form</td>
+                                        
+                                </tr>
+                               
+                                <tr>
+                                    <td align="left">
+                                        <asp:Label ID="UserName" runat="server" AssociatedControlID="UserName" 
+                                            Font-Bold="True">UserID</asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" 
+                                            ControlToValidate="txtUserName" ErrorMessage="User Name is required." 
+                                            ToolTip="User Name is required." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <asp:Label ID="Password" runat="server" AssociatedControlID="Password" 
+                                            Font-Bold="True">Password</asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" 
+                                            ControlToValidate="txtPassword" ErrorMessage="Password is required." 
+                                            ToolTip="Password is required." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <asp:CheckBox ID="RememberMe" runat="server" Text="Remember me next time." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" colspan="2">
+                                        <asp:Button ID="btnLogin" runat="server" CommandName="Login" Text="Sign In" 
+                                            ValidationGroup="Login1" Font-Bold="True" 
+                                            BackColor="#FFCC99" onclick="btnLogin_Click" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <asp:Label ID="lblmsg" runat="server"></asp:Label>
+                </table>
+		
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />--%>
+	
+
+		<p class="bottomlinks"><a href="#">Bottom link 1</a> | <a href="#">Bottom link 2</a> | <a href="#">Bottom link 3</a> | <a href="#">Bottom link 4</a> | <a href="#">Bottom link 5</a> | <a href="#">Bottom link 6</a></p>
+	</div>
+
+	<p class="footer">Copyright &copy; 2009 <a href="Default.aspx">Online Exam</a>&nbsp; <br />
+	Design by&nbsp; <a href="http://www.pradeepcsharp.blogspt.com/">iMastro Technologies</a></p>
+</div>
+    
+    
+    
+        <%--<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>--%>
+    
+    </form>
+</body>
+</html>
